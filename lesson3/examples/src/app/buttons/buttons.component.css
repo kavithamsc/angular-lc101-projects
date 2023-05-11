@@ -6,6 +6,7 @@
 h3 {
    text-align: center;
    text-decoration: underline;
+   color: brown;
 }
 
 button {
@@ -23,3 +24,4 @@ button {
 .copper {
    background: #b87333 ;
 }
+
