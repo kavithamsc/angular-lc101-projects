@@ -1,11 +1,8 @@
 <div class="buttons">
    <h3>{{buttonHeading}}</h3>
-   <button [class.gold]="!inactive" (click) ="inactive = true">Gold</button> <br>
-   <button [class.sliver]="!inactive" (click) ="inactive = true"lass="silverc">Silver</button> <br>
-   <button [class.copper]="!inactive" (click) ="inactive = true">Copper</button> <hr>
-   <button (click) = "inactive = !inactive">Reactivate Buttons</button>
-</div> <hr>
-<div class ="Joke Buttons">
-<h3>{{jokeHeading}}</h3>
-<button [style.background] = "changeColor" >Frustation Incarnate</button>
+   <button [class.gold]="!inactivegold" [disabled]="inactive"(click) ="setButton('gold')">Gold</button> <br>
+   <button [class.silver]="!inactivesilver"[disabled]="inactive"(click)  ="setButton('silver')">Silver</button> <br>
+   <button [class.copper]="!inactivecopper"[disabled]="inactive"(click)  ="setButton('cooper')">Copper</button> <hr>
+   <button (click) = "resetButton">Reactivate Buttons</button>
 </div>
+
